@@ -391,6 +391,7 @@
 				0B7DD6E81BC988D600D2B982 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B7DD6E91BC988D600D2B982 /* Build configuration list for PBXNativeTarget "goodtimesTests" */ = {
 			isa = XCConfigurationList;
@@ -399,6 +400,7 @@
 				0B7DD6EB1BC988D600D2B982 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
