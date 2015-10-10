@@ -14,6 +14,10 @@
 		0B7DD6D41BC988D600D2B982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B7DD6D31BC988D600D2B982 /* Assets.xcassets */; };
 		0B7DD6D71BC988D600D2B982 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B7DD6D51BC988D600D2B982 /* LaunchScreen.storyboard */; };
 		0B7DD6E21BC988D600D2B982 /* goodtimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7DD6E11BC988D600D2B982 /* goodtimesTests.swift */; };
+		0B7DD6EF1BC9B10100D2B982 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7DD6EE1BC9B10100D2B982 /* MusicViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		0B7DD6F11BC9B24200D2B982 /* Rick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0B7DD6F01BC9B24200D2B982 /* Rick.mp3 */; settings = {ASSET_TAGS = (); }; };
+		0B7DD6F51BC9B3FA00D2B982 /* Kygo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0B7DD6F41BC9B3FA00D2B982 /* Kygo.mp3 */; settings = {ASSET_TAGS = (); }; };
+		0B7DD6F71BC9B52700D2B982 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7DD6F61BC9B52700D2B982 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		0B7DD6DD1BC988D600D2B982 /* goodtimesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = goodtimesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7DD6E11BC988D600D2B982 /* goodtimesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goodtimesTests.swift; sourceTree = "<group>"; };
 		0B7DD6E31BC988D600D2B982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B7DD6EE1BC9B10100D2B982 /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		0B7DD6F01BC9B24200D2B982 /* Rick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Rick.mp3; path = ../../../Downloads/Rick.mp3; sourceTree = "<group>"; };
+		0B7DD6F41BC9B3FA00D2B982 /* Kygo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Kygo.mp3; path = ../../../Downloads/Kygo.mp3; sourceTree = "<group>"; };
+		0B7DD6F61BC9B52700D2B982 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B7DD6F71BC9B52700D2B982 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +70,7 @@
 		0B7DD6BD1BC988D600D2B982 = {
 			isa = PBXGroup;
 			children = (
+				0B7DD6F61BC9B52700D2B982 /* AVFoundation.framework */,
 				0B7DD6C81BC988D600D2B982 /* goodtimes */,
 				0B7DD6E01BC988D600D2B982 /* goodtimesTests */,
 				0B7DD6C71BC988D600D2B982 /* Products */,
@@ -82,10 +92,12 @@
 				0B7DD6C91BC988D600D2B982 /* AppDelegate.swift */,
 				0B7DD6CB1BC988D600D2B982 /* ViewController.swift */,
 				0B7DD6CD1BC988D600D2B982 /* Main.storyboard */,
+				0B7DD6EE1BC9B10100D2B982 /* MusicViewController.swift */,
 				0B7DD6D31BC988D600D2B982 /* Assets.xcassets */,
 				0B7DD6D51BC988D600D2B982 /* LaunchScreen.storyboard */,
 				0B7DD6D81BC988D600D2B982 /* Info.plist */,
 				0B7DD6D01BC988D600D2B982 /* goodtimes.xcdatamodeld */,
+				0B7DD6F21BC9B25400D2B982 /* Supporting Files */,
 			);
 			path = goodtimes;
 			sourceTree = "<group>";
@@ -97,6 +109,23 @@
 				0B7DD6E31BC988D600D2B982 /* Info.plist */,
 			);
 			path = goodtimesTests;
+			sourceTree = "<group>";
+		};
+		0B7DD6F21BC9B25400D2B982 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B7DD6F31BC9B26A00D2B982 /* Music */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0B7DD6F31BC9B26A00D2B982 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				0B7DD6F41BC9B3FA00D2B982 /* Kygo.mp3 */,
+				0B7DD6F01BC9B24200D2B982 /* Rick.mp3 */,
+			);
+			name = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,8 +209,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B7DD6D71BC988D600D2B982 /* LaunchScreen.storyboard in Resources */,
+				0B7DD6F51BC9B3FA00D2B982 /* Kygo.mp3 in Resources */,
 				0B7DD6D41BC988D600D2B982 /* Assets.xcassets in Resources */,
 				0B7DD6CF1BC988D600D2B982 /* Main.storyboard in Resources */,
+				0B7DD6F11BC9B24200D2B982 /* Rick.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B7DD6EF1BC9B10100D2B982 /* MusicViewController.swift in Sources */,
 				0B7DD6D21BC988D600D2B982 /* goodtimes.xcdatamodeld in Sources */,
 				0B7DD6CC1BC988D600D2B982 /* ViewController.swift in Sources */,
 				0B7DD6CA1BC988D600D2B982 /* AppDelegate.swift in Sources */,
