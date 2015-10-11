@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  goodtimes
 //
-//  Created by Michael Liou on 10/10/15.
-//  Copyright © 2015 Abhishek Upadhyaya Ghimire. All rights reserved.
+//  Created by Abhishek Upadhyaya Ghimire and Michael Liou on 10/10/15.
+//  Copyright © 2015 Abhishek Upadhyaya Ghimire and Michael Liou. All rights reserved.
 //
 
 import UIKit
