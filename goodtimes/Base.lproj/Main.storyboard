@@ -87,7 +87,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="xtJ-pW-xmR" kind="show" id="SOP-2o-rn7"/>
+                                            <segue destination="xtJ-pW-xmR" kind="show" identifier="songSegueIdentifier" id="h55-Sj-e4b"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="0LD-fa-Vfq" style="IBUITableViewCellStyleDefault" id="GU5-sH-6Nq">
@@ -97,7 +97,41 @@
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="2. Watch a funny YouTube Video" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0LD-fa-Vfq">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="2. Write an email/letter to an old friend that you have not seen in a year or more" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0LD-fa-Vfq">
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="89"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="ZHk-OW-gLX" style="IBUITableViewCellStyleDefault" id="Zat-IJ-MK6">
+                                        <rect key="frame" x="0.0" y="244" width="600" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zat-IJ-MK6" id="6hQ-pn-M5F">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="89"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="3. Go outside and meditate for 5 minutes. Be one with the natural world!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZHk-OW-gLX">
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="89"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="utI-uY-h4m" style="IBUITableViewCellStyleDefault" id="A5W-qR-gQR">
+                                        <rect key="frame" x="0.0" y="334" width="600" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A5W-qR-gQR" id="myi-3T-xkN">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="89"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Check your profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="utI-uY-h4m">
                                                     <rect key="frame" x="15" y="0.0" width="550" height="89"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -135,51 +169,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eh-gW-kNm">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eh-gW-kNm">
                                 <rect key="frame" x="237" y="28" width="127" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="127" id="39H-iB-5Cq"/>
+                                    <constraint firstAttribute="width" constant="127" id="EAW-FK-xif"/>
                                 </constraints>
                                 <state key="normal" title="Play Music"/>
                                 <connections>
                                     <action selector="playMusic:" destination="xtJ-pW-xmR" eventType="touchUpInside" id="GyX-Li-D6u"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEO-QR-Zg7">
-                                <rect key="frame" x="277" y="562" width="46" height="30"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" text="This music made me feel ..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PRv-SI-1bh">
+                                <rect key="frame" x="20" y="95" width="560" height="410"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEO-QR-Zg7">
+                                <rect key="frame" x="534" y="64" width="46" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="b4j-JO-9Uv"/>
+                                    <constraint firstAttribute="width" constant="46" id="bpV-IN-Gg9"/>
                                 </constraints>
                                 <state key="normal" title="Done"/>
                                 <connections>
                                     <action selector="congrats:" destination="xtJ-pW-xmR" eventType="touchUpInside" id="Irb-ug-eUX"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="This music made me feel ..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PRv-SI-1bh">
-                                <rect key="frame" x="20" y="95" width="560" height="410"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <accessibility key="accessibilityConfiguration" label=""/>
                         <constraints>
-                            <constraint firstItem="PRv-SI-1bh" firstAttribute="centerX" secondItem="1eh-gW-kNm" secondAttribute="centerX" id="2r8-yo-bBj"/>
-                            <constraint firstItem="PRv-SI-1bh" firstAttribute="leading" secondItem="EHr-Q5-ice" secondAttribute="leadingMargin" id="5rX-mJ-ZPP"/>
-                            <constraint firstItem="LEO-QR-Zg7" firstAttribute="centerX" secondItem="1eh-gW-kNm" secondAttribute="centerX" id="NSe-c0-fpc"/>
-                            <constraint firstItem="1eh-gW-kNm" firstAttribute="top" secondItem="sbk-zF-ga0" secondAttribute="bottom" constant="8" symbolic="YES" id="RHb-1v-lDd"/>
-                            <constraint firstItem="PRv-SI-1bh" firstAttribute="centerY" secondItem="EHr-Q5-ice" secondAttribute="centerY" id="TIw-un-YND"/>
-                            <constraint firstItem="PRv-SI-1bh" firstAttribute="top" secondItem="1eh-gW-kNm" secondAttribute="bottom" constant="37" id="ev2-L9-Kwo"/>
-                            <constraint firstItem="QK2-nE-jm2" firstAttribute="top" secondItem="LEO-QR-Zg7" secondAttribute="bottom" constant="8" symbolic="YES" id="uUy-WL-vdi"/>
-                            <constraint firstItem="1eh-gW-kNm" firstAttribute="centerX" secondItem="EHr-Q5-ice" secondAttribute="centerX" id="zpd-Rv-X2e"/>
+                            <constraint firstItem="LEO-QR-Zg7" firstAttribute="top" secondItem="sbk-zF-ga0" secondAttribute="bottom" id="ILb-5f-RDx"/>
+                            <constraint firstItem="LEO-QR-Zg7" firstAttribute="trailing" secondItem="EHr-Q5-ice" secondAttribute="trailingMargin" id="NRh-cU-Op4"/>
+                            <constraint firstItem="PRv-SI-1bh" firstAttribute="trailing" secondItem="LEO-QR-Zg7" secondAttribute="trailing" id="Pfa-z9-Fcq"/>
+                            <constraint firstItem="sbk-zF-ga0" firstAttribute="top" secondItem="1eh-gW-kNm" secondAttribute="bottom" constant="6" id="Sea-JE-vBR"/>
+                            <constraint firstItem="PRv-SI-1bh" firstAttribute="leading" secondItem="EHr-Q5-ice" secondAttribute="leadingMargin" id="baj-xe-65F"/>
+                            <constraint firstItem="PRv-SI-1bh" firstAttribute="centerY" secondItem="EHr-Q5-ice" secondAttribute="centerY" id="hT9-CD-mYd"/>
+                            <constraint firstItem="1eh-gW-kNm" firstAttribute="centerX" secondItem="PRv-SI-1bh" secondAttribute="centerX" id="qjz-e3-CEZ"/>
+                            <constraint firstItem="PRv-SI-1bh" firstAttribute="top" secondItem="LEO-QR-Zg7" secondAttribute="bottom" constant="1" id="xBm-N3-B42"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Favorite Upbeat Song" id="yhN-jP-1Bh"/>
+                    <connections>
+                        <outlet property="inputTextField" destination="PRv-SI-1bh" id="8rJ-VA-O6k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bz4-DP-enK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2626" y="1047"/>
+            <point key="canvasLocation" x="2667" y="630"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uBj-0H-lHp">

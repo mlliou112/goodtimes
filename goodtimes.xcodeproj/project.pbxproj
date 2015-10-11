@@ -177,6 +177,7 @@
 				TargetAttributes = {
 					0B7DD6C51BC988D600D2B982 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 68K322VCGG;
 					};
 					0B7DD6DC1BC988D600D2B982 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -362,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = goodtimes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.goodtimes;
@@ -373,6 +375,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = goodtimes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.goodtimes;

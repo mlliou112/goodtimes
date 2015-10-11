@@ -9,8 +9,9 @@
 import UIKit
 import AVFoundation
 
-class MusicViewController: UIViewController {
+class MusicViewController: UIViewController, UITextViewDelegate {
 
+    @IBOutlet weak var inputTextField: UITextView!
     
     var ButtonAudioURL = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Kygo", ofType: "mp3")!)
     
@@ -49,11 +50,21 @@ class MusicViewController: UIViewController {
         ButtonAudioPlayer.play()
     }
     
+    // MARK: UITextViewDelegate
+    
+    func textFieldShouldReturn(textField: UITextView) -> Bool {
+        // Hide the keyboard.
+        textField.resignFirstResponder()
+        return true
+    }
+    
     @IBAction func congrats(sender: UIButton) {
         let alertController = UIAlertController(title: "Great Job!", message: "You get 5 pats on the back", preferredStyle: UIAlertControllerStyle.Alert)
         alertController.addAction(UIAlertAction(title: "Return", style: UIAlertActionStyle.Default,handler: nil))
         self.presentViewController(alertController, animated: true, completion: nil)
+
     }
+    
     
     
     
