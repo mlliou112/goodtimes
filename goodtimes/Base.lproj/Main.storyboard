@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -16,20 +16,47 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Ow5-61-F65">
+                                <rect key="frame" x="20" y="116" width="154" height="72"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Passcode" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CXq-4U-gzX">
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="30"/>
+                                        <color key="backgroundColor" red="0.94509803920000002" green="0.91764705879999997" blue="0.6705882353" alpha="0.91000000000000003" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.94509803920000002" green="0.91764705879999997" blue="0.6705882353" alpha="0.91000000000000003" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qre-6r-8zC">
+                                        <rect key="frame" x="0.0" y="42" width="49" height="30"/>
+                                        <state key="normal" title="Submit"/>
+                                        <connections>
+                                            <action selector="submitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fNc-Wc-fMJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803921568625" green="0.91764705882352937" blue="0.6705882352941176" alpha="0.91000000000000003" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Ow5-61-F65" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="96" id="B6R-AL-Ffb"/>
+                            <constraint firstItem="Ow5-61-F65" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Lrg-Ib-Lei"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="5L4-7Q-ahq" appends="YES" id="Gpx-g1-z4n"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="passcodeTextField" destination="CXq-4U-gzX" id="rR6-vh-64M"/>
+                        <segue destination="JfA-Hb-z5e" kind="show" identifier="segueIdentifier" id="6Po-Uq-SYV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="5L4-7Q-ahq">
-                    <connections>
-                        <segue destination="JfA-Hb-z5e" kind="show" id="mHn-Ig-TjK"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <tapGestureRecognizer id="5L4-7Q-ahq"/>
             </objects>
+            <point key="canvasLocation" x="380" y="337"/>
         </scene>
         <!--Day 1: Tasks-->
         <scene sceneID="Lgi-cI-aP2">
@@ -39,6 +66,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="0.94509803920000002" green="0.91764705879999997" blue="0.6705882353" alpha="0.91000000000000003" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection id="otC-Xe-oyX">
                                 <cells>
@@ -108,7 +136,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eh-gW-kNm">
-                                <rect key="frame" x="237" y="72" width="127" height="30"/>
+                                <rect key="frame" x="237" y="28" width="127" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="127" id="39H-iB-5Cq"/>
                                 </constraints>
@@ -118,7 +146,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEO-QR-Zg7">
-                                <rect key="frame" x="277" y="518" width="46" height="30"/>
+                                <rect key="frame" x="277" y="562" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="b4j-JO-9Uv"/>
                                 </constraints>
@@ -128,7 +156,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This music made me feel ..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PRv-SI-1bh">
-                                <rect key="frame" x="20" y="139" width="560" height="322"/>
+                                <rect key="frame" x="20" y="95" width="560" height="410"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -156,7 +184,6 @@
         <!--Navigation Controller-->
         <scene sceneID="uBj-0H-lHp">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SlQ-x9-T9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JfA-Hb-z5e" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" id="niA-aG-3zg">
@@ -168,8 +195,9 @@
                         <segue destination="aTq-TU-SPn" kind="relationship" relationship="rootViewController" id="Tjg-on-Pbg"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SlQ-x9-T9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1125" y="1047"/>
+            <point key="canvasLocation" x="1100" y="570"/>
         </scene>
     </scenes>
 </document>

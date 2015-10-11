@@ -15,9 +15,9 @@
 		0B7DD6D71BC988D600D2B982 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B7DD6D51BC988D600D2B982 /* LaunchScreen.storyboard */; };
 		0B7DD6E21BC988D600D2B982 /* goodtimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7DD6E11BC988D600D2B982 /* goodtimesTests.swift */; };
 		0B7DD6EF1BC9B10100D2B982 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7DD6EE1BC9B10100D2B982 /* MusicViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		0B7DD6F11BC9B24200D2B982 /* Rick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0B7DD6F01BC9B24200D2B982 /* Rick.mp3 */; settings = {ASSET_TAGS = (); }; };
-		0B7DD6F51BC9B3FA00D2B982 /* Kygo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0B7DD6F41BC9B3FA00D2B982 /* Kygo.mp3 */; settings = {ASSET_TAGS = (); }; };
 		0B7DD6F71BC9B52700D2B982 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7DD6F61BC9B52700D2B982 /* AVFoundation.framework */; };
+		DE33ED101BC9D34700B7BE68 /* Kygo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE33ED0F1BC9D34700B7BE68 /* Kygo.mp3 */; settings = {ASSET_TAGS = (); }; };
+		DE33ED121BC9D34E00B7BE68 /* Rick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE33ED111BC9D34E00B7BE68 /* Rick.mp3 */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +43,9 @@
 		0B7DD6E11BC988D600D2B982 /* goodtimesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goodtimesTests.swift; sourceTree = "<group>"; };
 		0B7DD6E31BC988D600D2B982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B7DD6EE1BC9B10100D2B982 /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
-		0B7DD6F01BC9B24200D2B982 /* Rick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Rick.mp3; path = ../../../Downloads/Rick.mp3; sourceTree = "<group>"; };
-		0B7DD6F41BC9B3FA00D2B982 /* Kygo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Kygo.mp3; path = ../../../Downloads/Kygo.mp3; sourceTree = "<group>"; };
 		0B7DD6F61BC9B52700D2B982 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DE33ED0F1BC9D34700B7BE68 /* Kygo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Kygo.mp3; path = ../../../../../Desktop/Kygo.mp3; sourceTree = "<group>"; };
+		DE33ED111BC9D34E00B7BE68 /* Rick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Rick.mp3; path = ../../../../../Desktop/Rick.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +122,8 @@
 		0B7DD6F31BC9B26A00D2B982 /* Music */ = {
 			isa = PBXGroup;
 			children = (
-				0B7DD6F41BC9B3FA00D2B982 /* Kygo.mp3 */,
-				0B7DD6F01BC9B24200D2B982 /* Rick.mp3 */,
+				DE33ED111BC9D34E00B7BE68 /* Rick.mp3 */,
+				DE33ED0F1BC9D34700B7BE68 /* Kygo.mp3 */,
 			);
 			name = Music;
 			sourceTree = "<group>";
@@ -208,11 +208,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE33ED101BC9D34700B7BE68 /* Kygo.mp3 in Resources */,
 				0B7DD6D71BC988D600D2B982 /* LaunchScreen.storyboard in Resources */,
-				0B7DD6F51BC9B3FA00D2B982 /* Kygo.mp3 in Resources */,
+				DE33ED121BC9D34E00B7BE68 /* Rick.mp3 in Resources */,
 				0B7DD6D41BC988D600D2B982 /* Assets.xcassets in Resources */,
 				0B7DD6CF1BC988D600D2B982 /* Main.storyboard in Resources */,
-				0B7DD6F11BC9B24200D2B982 /* Rick.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +423,7 @@
 				0B7DD6E81BC988D600D2B982 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B7DD6E91BC988D600D2B982 /* Build configuration list for PBXNativeTarget "goodtimesTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +432,7 @@
 				0B7DD6EB1BC988D600D2B982 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
